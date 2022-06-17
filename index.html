@@ -288,7 +288,7 @@
           throw '无效的密钥';
         } else {
           console.log(response);
-          throw '未知错误';
+          throw '未知错误:' + response;
         }
       })
       .then(arrayBuffer => ctx.decodeAudioData(arrayBuffer))
